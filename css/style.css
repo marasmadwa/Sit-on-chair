@@ -9,7 +9,7 @@ body {
     font-family: "Raleway", Arial, sans-serif;
 }
 .container {
-    width: 1200px;
+    width: 1050px;
     margin: 0 auto;
 }
 header {
@@ -50,6 +50,62 @@ li {
     display: inline;
 }
 .container:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.main {
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%);
+    background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ));
+}
+.chair_and_main_text {
+    margin-top: 140px;
+    margin-bottom: 70px;
+    background-image: url("../images/black_chair.png");
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 80%;
+    float: left;
+    padding-left: 40%;
+    text-align: center;
+}
+h1 {
+    text-transform: uppercase;
+    margin-top: 55px;
+}
+.arrow-left, .arrow-right {
+    width: 10%;
+    line-height: 500px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 50px;
+    font-weight: 300;
+}
+.arrow-left {
+    float: left;
+}
+.arrow-right {
+    float: right;
+}
+.arrow-left a, .arrow-right a {
+    color: #2ad0ac;
+}
+.btn {
+    width: 265px;
+    height: 52px;
+    background-color: #2ad0ac;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 52px;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+.main:after {
     content: "";
     display: block;
     clear: both;
