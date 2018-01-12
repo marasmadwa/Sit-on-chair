@@ -110,3 +110,57 @@ h1 {
     display: block;
     clear: both;
 }
+.col-1 {
+    float: left;
+    width: 33.333%;
+}
+.col-2{
+    float: left;
+    width: 33.333%;
+}
+.col-3 {
+    float: left;
+    width: 33.333%;
+}
+.picture_box-1 {
+    margin-top: 28px;
+    margin-right: 30px;
+    background-image: url("../images/box1_img.jpg");
+    height: 227px;
+    box-shadow: 5px /*lewa*/ 5px /*góra*/ 0 /*rozmycie*/ 0 /*rozproszenie*/ gray /*kolorgray*/;
+}
+.picture_box-2 {
+    margin-top: 28px;
+    margin-right: 30px;
+    background-image: url("../images/box2_img.jpg");
+    height: 227px;
+    box-shadow: 5px /*lewa*/ 5px /*góra*/ 0 /*rozmycie*/ 0 /*rozproszenie*/ gray /*kolorgray*/;
+}
+.box_text {
+    margin-top: 28px;
+    border: 2px solid gray;
+    box-shadow: 5px /*lewa*/ 5px /*góra*/ 0 /*rozmycie*/ 0 /*rozproszenie*/ gray /*kolorgray*/;
+}
+.underscore {
+    width: 60%;
+    height: 7px;
+    margin-left: 23px;
+    background-color: #2ad0ac;
+}
+h2 {
+    margin-left: 23px;
+    margin-top: 30px;
+}
+.p2 {
+    margin-top: 17px;
+    margin-left: 23px;
+}
+.p3 {
+    margin-left: 23px;
+    margin-top: 30px;
+}
+.middle:after {
+    content: "";
+    display: block;
+    clear: both;
+}
