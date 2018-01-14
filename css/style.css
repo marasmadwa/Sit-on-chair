@@ -202,28 +202,24 @@ h3 {
 }
 .p4 {
     text-transform: uppercase;
-    color: gray;
+    color: black;
 }
 .price_box_1 {
     margin-right: 32px;
     margin-top: 76px;
-    padding-top: 75px;
-    height: 500px;
     border: 2px solid gray;
     background-color: white;
+    margin-bottom: 66px;
 }
 .price_box_2 {
     margin-right: 32px;
     margin-top: 76px;
-    padding-top: 75px;
-    height: 500px;
     background-color: #2ad0ac;
 }
 
 .price_box_3 {
+    margin-right: 32px;
     margin-top: 76px;
-    padding-top: 75px;
-    height: 500px;
     border: 2px solid gray;
     background-color: white;
 }
@@ -239,23 +235,23 @@ h3 {
     float: left;
     width: 33.333%;
 }
-.main_circle {
+.main_circle { /*dodanie okręgów do etykiety cennika 1 i 3*/
     width: 55px;
     height: 55px;
     border-radius: 50%;
     border: 2px solid gray;
     position: relative;
-    top: -110px;
+    top: -35px;
     left: 130px;
     background-color: white;
 }
-.main_circle_2 {
+.main_circle_2 { /*dodanie okręgów do etykiety cennika 2*/
     width: 55px;
     height: 55px;
     border-radius: 50%;
     border: 2px solid #2ad0ac;
     position: relative;
-    top: -110px;
+    top: -35px;
     left: 130px;
     background-color: #2ad0ac;
 }
@@ -278,37 +274,37 @@ h3 {
     top: 12px;
 }
 .plan {
-    margin-top: 80px;
-    margin-left: -35px;
+    text-align: center;
+    margin-top: 15px;
     width: 100%;
     color: #2ad0ac;
     font-size: 20px;
     font-weight: 600;
 }
 .plan_2{
-    margin-top: 80px;
-    margin-left: -45px;
-    width: 100px;
+    margin-top: 15px;
+    width: 100%;
     color: white;
     text-align: center;
     font-size: 20px;
     font-weight: 600;
 }
-.price_circle {
+.price_circle { /*okręg z ceną 1 i 3*/
+    margin-top: 64px;
+    margin-left: 90px;
     width: 130px;
     height: 130px;
     border-radius: 50%;
     border: 2px solid gray;
-    margin-top: 80px;
-    margin-left: -45px;
+
 }
-.price_circle_2 {
+.price_circle_2 { /*okręg z ceną 2*/
+    margin-top: 64px;
+    margin-left: 90px;
     width: 130px;
     height: 130px;
     border-radius: 50%;
     border: 2px solid #2ad0ac;
-    margin-top: 80px;
-    margin-left: -45px;
     background-color: white;
 }
 .p5 {
@@ -338,7 +334,216 @@ h3 {
 sup {
     text-align: center;
 }
+/*dodanie opcji cennika*/
+.options {
+    margin-top: 243px;
+}
+.p9 {
+    margin-top: 33px;
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+    background-color: lightgray;
+    line-height: 45px;
+}
+.p10 {
+    width: 100%;
+    line-height: 45px;
+    text-align: center;
+    font-size: 17px;
+    background-color: whitesmoke;
+}
+.p11 {
+    margin-top: 33px;
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+    background-color: white;
+    line-height: 45px;
+}
+.p12 {
+    width: 100%;
+    line-height: 45px;
+    text-align: center;
+    font-size: 17px;
+    background-color: whitesmoke;
+}
+.p13 {
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+    background-color: white;
+    line-height: 45px;
+}
+.p14 {
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+    background-color: lightgray;
+    line-height: 45px;
+}
+.p15 {
+    width: 100%;
+    line-height: 45px;
+    text-align: center;
+    font-size: 17px;
+    background-color: whitesmoke;
+}
+.join_button {
+    color: white;
+    text-decoration: none;
+    background-color: #2ad0ac;
+    line-height: 33px;
+    width: 121px;
+    height: 33px;
+    display: block;
+    text-align: center;
+    margin-top: 110px;
+    margin-bottom: 20px;
+    margin-left: 90px;
+    border-radius: 10px;
+}
+.join_button_2 {
+    color: #2ad0ac;
+    text-decoration: none;
+    background-color: white;
+    line-height: 33px;
+    width: 121px;
+    height: 33px;
+    display: block;
+    text-align: center;
+    margin-top: 66px;
+    margin-bottom: 20px;
+    margin-left: 90px;
+    border-radius: 10px;
+}
+.join_button_3 {
+    color: white;
+    text-decoration: none;
+    background-color: #2ad0ac;
+    line-height: 33px;
+    width: 121px;
+    height: 33px;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 90px;
+    border-radius: 10px;
+}
 .price:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.contact_details {
+    padding-top: 36px;
+}
+.contact_col_1{
+    width: 70%;
+    margin-top: 60px;
+    float: left;
+}
+.contact_col_2{
+    width: 30%;
+    margin-top: 60px;
+    float: right;
+}
+input, label {
+    display: block;
+}
+.form_group {
+    margin: 26px;
+    font-size: 20px;
+}
+input {
+    height: 64px;
+    width: 70%;
+    font-size: 25px;
+    border: 1px solid #2ad0ac;
+}
+textarea{
+    width: 70%;
+    font-size: 25px;
+    border: 1px solid #2ad0ac;
+}
+.red_chair {
+    width: 240px;
+    height: 240px;
+    background-image: url("../images/red_chair.png");
+    background-repeat: no-repeat;
+}
+.checkbox{
+    width: 50px;
+    height: 50px;
+    display: inline;
+}
+.checkbox span {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #2ad0ac;
+    display: block;
+}
+.checkbox [type="checkbox"] { /*wyeliminowanie domyślnego kwadracika*/
+    display: none;
+    visibility: hidden;
+}
+.checkbox [type="checkbox"]:checked + span{ /*ustawienie "ptaszka" jako zaznaczenie checkboxa*/
+    background-image: url("../images/form_ok.jpg");
+    background-repeat: no-repeat;
+}
+.p17 {
+    color: lightgray;
+}
+.send_button {
+    color: white;
+    text-decoration: none;
+    background-color: #2ad0ac;
+    line-height: 72px;
+    width: 345px;
+    height: 72px;
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.contact_details:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.copyright{
+    float: left;
+}
+.flickr, .vimeo, .pinterest, .twitter {
+    width: 33px;
+    height: 33px;
+    float: right;
+    margin-right: 7px;
+}
+.flickr{
+    background-image: url("../images/flickr.png");
+}
+.vimeo{
+    background-image: url("../images/vimeo.png");
+}
+.pinterest{
+    background-image: url("../images/pinterest.png");
+}
+.twitter{
+    background-image: url("../images/twitter.png");
+}
+.p18 {
+    color: gray;
+    font-weight: 700;
+    float: right;
+    margin-top: 10px;
+    margin-left: 70px;
+}
+footer:after {
     content: "";
     display: block;
     clear: both;
