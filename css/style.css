@@ -212,6 +212,7 @@ h3 {
     margin-bottom: 66px;
 }
 .price_box_2 {
+    height: 575px; /*Narazie ustawilem na sztywno, ponieważ nie wiem czemu mój join button_2 nie rozszerza dvia price_box_2*/
     margin-right: 32px;
     margin-top: 76px;
     background-color: #2ad0ac;
@@ -509,7 +510,9 @@ textarea{
     font-size: 25px;
     font-weight: bold;
 }
-
+::-webkit-input-placeholder {
+    color: lightgray;
+}
 .contact_details:after {
     content: "";
     display: block;
@@ -542,6 +545,9 @@ textarea{
     float: right;
     margin-top: 10px;
     margin-left: 70px;
+}
+footer {
+    margin-bottom: 50px;
 }
 footer:after {
     content: "";
