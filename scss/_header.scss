@@ -12,18 +12,39 @@ header {
   align-items: center;
 }
 
-.list-1 li{
+.list-1{
+  position:relative;
+  height: 20px;
   text-decoration: none;
   color: white;
-  display: inline;
+  display: flex;
+  flex-direction: row;
   list-style: none;
-  .list-2{
-    display: none;
-  }
+  padding: 0;
+}
+.list-1 li a{
+  transition: 0.2s all ease-in-out;
 }
 
+.list-1 li a:hover {
+  transform: scale(1.1);
+  color: #2ad0ac;
+}
+.list-1 li{
+  margin-left: 20px;
+}
 
-
+.list-1 li ul li{
+  display: none;
+}
+.list-1 li:hover ul li{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  width: 100px;
+  height: 50px;
+}
 
 .logo {
   font-size: 15px;
