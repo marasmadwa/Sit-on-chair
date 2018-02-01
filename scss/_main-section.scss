@@ -9,7 +9,6 @@
   background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e5e5e5', GradientType=0);
 }
-
 .main-section-carousel {
   display: flex;
   flex-direction: row;
@@ -61,9 +60,33 @@ h1 {
   cursor: pointer;
   text-align: center;
   transition: 0.5s all ease-in-out;
+  outline: none;
+}
+.checkBtn:active{
+  transform: translateY(4px);
+  transition: 0.05s;
 }
 
 .checkBtn:hover{
   background: black;
   color: #2ad0ac;
+}
+//slider
+
+.slider ul{
+  list-style: none;
+}
+.slider li{
+  display: none;
+}
+.slider .visible{
+  display: inline-block;
+}
+.slider li:focus{
+  animation: slide 0.6s steps(10) infinite;
+}
+@keyframes slide {
+  100% {
+    100% { background-position: -2000px; }
+  }
 }
