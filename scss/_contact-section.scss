@@ -1,0 +1,81 @@
+.contact-section {
+  padding-top: 36px;
+}
+.contact-section:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.contact_col_1{
+  width: 70%;
+  margin-top: 60px;
+  float: left;
+}
+.contact_col_2{
+  width: 30%;
+  margin-top: 60px;
+  float: right;
+}
+input, label {
+  display: block;
+}
+.form_group {
+  margin: 26px;
+  font-size: 20px;
+}
+input {
+  height: 64px;
+  width: 70%;
+  font-size: 25px;
+  border: 1px solid #2ad0ac;
+}
+textarea{
+  width: 70%;
+  font-size: 25px;
+  border: 1px solid #2ad0ac;
+}
+.red_chair {
+  width: 240px;
+  height: 240px;
+  background-image: url("../images/red_chair.png");
+  background-repeat: no-repeat;
+}
+.checkbox{
+  width: 50px;
+  height: 50px;
+  display: inline;
+}
+.checkbox span {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #2ad0ac;
+  display: block;
+}
+.checkbox [type="checkbox"] { /*wyeliminowanie domyślnego kwadracika*/
+  display: none;
+  visibility: hidden;
+}
+.checkbox [type="checkbox"]:checked + span{ /*ustawienie "ptaszka" jako zaznaczenie checkboxa*/
+  background-image: url("../images/form_ok.jpg");
+  background-repeat: no-repeat;
+}
+.p17 {
+  color: lightgray;
+}
+.send_button {
+  color: white;
+  text-decoration: none;
+  background-color: #2ad0ac;
+  line-height: 72px;
+  width: 345px;
+  height: 72px;
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+  border-radius: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+::-webkit-input-placeholder {
+  color: lightgray;
+}

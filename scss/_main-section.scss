@@ -1,0 +1,69 @@
+
+.main-section {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+  background: -webkit-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e5e5e5', GradientType=0);
+}
+
+.main-section-carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  .main-section-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+h1 {
+  text-transform: uppercase;
+  margin-bottom: 40px;
+
+}
+.main-section-text {
+  text-align: start;
+  width: 430px;
+  margin-bottom: 40px;
+}
+.arrBtnR,.arrBtnL {
+  background: none;
+  outline: none;
+  border: none;
+  Font-size: 50px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  color: #2ad0ac;
+  transition: 0.5s all ease-in-out;
+}
+.arrBtnL:hover {
+   color: black;
+ }
+.arrBtnR:hover {
+  color: black;
+}
+.checkBtn{
+  width: 270px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: white;
+  background: #2ad0ac;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.5s all ease-in-out;
+}
+
+.checkBtn:hover{
+  background: black;
+  color: #2ad0ac;
+}

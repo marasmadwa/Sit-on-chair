@@ -1,0 +1,36 @@
+.copyright{
+  float: left;
+}
+.flickr, .vimeo, .pinterest, .twitter {
+  width: 33px;
+  height: 33px;
+  float: right;
+  margin-right: 7px;
+}
+.flickr{
+  background-image: url("../images/flickr.png");
+}
+.vimeo{
+  background-image: url("../images/vimeo.png");
+}
+.pinterest{
+  background-image: url("../images/pinterest.png");
+}
+.twitter{
+  background-image: url("../images/twitter.png");
+}
+.p18 {
+  color: gray;
+  font-weight: 700;
+  float: right;
+  margin-top: 10px;
+  margin-left: 70px;
+}
+footer {
+  margin-bottom: 50px;
+}
+footer:after {
+  content: "";
+  display: block;
+  clear: both;
+}
