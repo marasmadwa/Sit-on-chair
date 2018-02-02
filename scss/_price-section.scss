@@ -1,31 +1,40 @@
 .price-section {
-  padding-top: 100px;
-  background: #ffffff;
-  background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
-  background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%);
-  background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 )
+  padding-top: 40px;
+  background-color: rgba(245, 245, 245, 1);
+  background: filter-gradient(#f5f5f5, #ffffff, vertical);
+  background: background-image(linear-gradient(top, rgba(245, 245, 245, 1) 0%, rgba(237, 237, 237, 1) 50%, rgba(227, 227, 227, 1) 98%, rgba(255, 255, 255, 1) 100%));
 }
-.underscore_3 {
-  width: 30.333%;
-  height: 7px;
-  background-color: #2ad0ac;
-}
-.p4 {
+
+.price-section-header {
   text-transform: uppercase;
   color: black;
+  position: relative;
 }
+
+.price-section-header:after {
+  content: '';
+  height: 7px;
+  width: 324px;
+  background: #2ad0ac;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
 .price_box_1 {
   margin-right: 32px;
   margin-top: 76px;
   border: 2px solid gray;
   background-color: white;
   margin-bottom: 66px;
+  padding-bottom: 20px;
 }
+
+
 .price_box_2 {
-  height: 575px; /*Narazie ustawilem na sztywno, ponieważ nie wiem czemu mój join button_2 nie rozszerza dvia price_box_2*/
   margin-right: 32px;
   margin-top: 76px;
+  padding-bottom: 20px;
   background-color: #2ad0ac;
 }
 
@@ -34,19 +43,24 @@
   margin-top: 76px;
   border: 2px solid gray;
   background-color: white;
+  padding-bottom: 20px;
 }
+
 .price_col-1 {
   float: left;
   width: 33.333%;
 }
+
 .price_col-2 {
   float: left;
   width: 33.333%;
 }
+
 .price_col-3 {
   float: left;
   width: 33.333%;
 }
+
 .main_circle { /*dodanie okręgów do etykiety cennika 1 i 3*/
   width: 55px;
   height: 55px;
@@ -57,6 +71,7 @@
   left: 130px;
   background-color: white;
 }
+
 .main_circle_2 { /*dodanie okręgów do etykiety cennika 2*/
   width: 55px;
   height: 55px;
@@ -67,6 +82,7 @@
   left: 130px;
   background-color: #2ad0ac;
 }
+
 .middle_crircle {
   width: 26px;
   height: 26px;
@@ -76,6 +92,7 @@
   left: 12px;
   top: 12px;
 }
+
 .middle_crircle_2 {
   width: 28px;
   height: 28px;
@@ -85,6 +102,7 @@
   left: 12px;
   top: 12px;
 }
+
 .plan {
   text-align: center;
   margin-top: 15px;
@@ -93,7 +111,8 @@
   font-size: 20px;
   font-weight: 600;
 }
-.plan_2{
+
+.plan_2 {
   margin-top: 15px;
   width: 100%;
   color: white;
@@ -101,6 +120,7 @@
   font-size: 20px;
   font-weight: 600;
 }
+
 .price_circle { /*okręg z ceną 1 i 3*/
   margin-top: 64px;
   margin-left: 90px;
@@ -110,6 +130,7 @@
   border: 2px solid gray;
 
 }
+
 .price_circle_2 { /*okręg z ceną 2*/
   margin-top: 64px;
   margin-left: 90px;
@@ -119,38 +140,36 @@
   border: 2px solid #2ad0ac;
   background-color: white;
 }
-.p5 {
+
+.plan-price-1 {
   color: gray;
   margin-top: 30px;
   text-align: center;
   font-size: 32px;
   font-weight: bold;
 }
-.p6 {
+
+.per-month-1 {
   color: gray;
   margin-left: -10px;
   text-align: center;
 }
-.p7 {
+
+.plan-price-2 {
   color: #2ad0ac;
   margin-top: 30px;
   text-align: center;
   font-size: 32px;
   font-weight: bold;
 }
-.p8 {
+
+.per-month-2 {
   color: #2ad0ac;
   margin-left: -10px;
   text-align: center;
 }
-sup {
-  text-align: center;
-}
-/*dodanie opcji cennika*/
-.options {
-  margin-top: 243px;
-}
-.p9 {
+
+.option-1 {
   margin-top: 33px;
   width: 100%;
   text-align: center;
@@ -158,14 +177,16 @@ sup {
   background-color: lightgray;
   line-height: 45px;
 }
-.p10 {
+
+.service-1 {
   width: 100%;
   line-height: 45px;
   text-align: center;
   font-size: 17px;
   background-color: whitesmoke;
 }
-.p11 {
+
+.option-2 {
   margin-top: 33px;
   width: 100%;
   text-align: center;
@@ -173,35 +194,40 @@ sup {
   background-color: white;
   line-height: 45px;
 }
-.p12 {
+
+.service-2 {
   width: 100%;
   line-height: 45px;
   text-align: center;
   font-size: 17px;
   background-color: whitesmoke;
 }
-.p13 {
+
+.bonus-1 {
   width: 100%;
   text-align: center;
   font-size: 17px;
   background-color: white;
   line-height: 45px;
 }
-.p14 {
+
+.bonus-2 {
   width: 100%;
   text-align: center;
   font-size: 17px;
   background-color: lightgray;
   line-height: 45px;
 }
-.p15 {
+
+.advise {
   width: 100%;
   line-height: 45px;
   text-align: center;
   font-size: 17px;
   background-color: whitesmoke;
 }
-.join_button {
+
+.join_button{
   color: white;
   text-decoration: none;
   background-color: #2ad0ac;
@@ -210,39 +236,34 @@ sup {
   height: 33px;
   display: block;
   text-align: center;
-  margin-top: 110px;
-  margin-bottom: 20px;
-  margin-left: 90px;
   border-radius: 10px;
+  transition: 0.5s all ease-in-out;
 }
-.join_button_2 {
+.join_button:hover{
+  background: black;
   color: #2ad0ac;
-  text-decoration: none;
-  background-color: white;
-  line-height: 33px;
-  width: 121px;
-  height: 33px;
-  display: block;
-  text-align: center;
-  margin-top: 66px;
-  margin-bottom: 20px;
-  margin-left: 90px;
-  border-radius: 10px;
 }
-.join_button_3 {
-  color: white;
-  text-decoration: none;
-  background-color: #2ad0ac;
-  line-height: 33px;
-  width: 121px;
-  height: 33px;
-  display: block;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 90px;
-  border-radius: 10px;
+.price_box_2 .join_button:hover {
+  background: black;
+  color: #2ad0ac;
 }
+
+.price_box_2 .join_button {
+  background-color: #ffffff;
+  color: #2ad0ac;
+  margin-top: 75px;
+  margin-left: 100px;
+  transition: 0.5s all ease-in-out;
+}
+.price_box_1 .join_button {
+  margin-top: 113px;
+  margin-left: 100px;
+}
+.price_box_3 .join_button {
+  margin-top: 25px;
+  margin-left: 100px;
+}
+
 .price-section:after {
   content: "";
   display: block;

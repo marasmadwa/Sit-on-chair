@@ -6,6 +6,18 @@
   display: block;
   clear: both;
 }
+.contact-section-header{
+  position: relative;
+}
+.contact-section-header:after{
+  content: '';
+  height: 7px;
+  width: 324px;
+  background: #2ad0ac;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
 .contact_col_1{
   width: 70%;
   margin-top: 60px;
@@ -40,7 +52,12 @@ textarea{
   background-image: url("../images/red_chair.png");
   background-repeat: no-repeat;
 }
+.checkRow{
+  display: flex;
+  align-items: center;
+}
 .checkbox{
+  margin-right: 20px;
   width: 50px;
   height: 50px;
   display: inline;
