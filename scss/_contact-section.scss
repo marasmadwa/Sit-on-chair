@@ -92,6 +92,16 @@ textarea{
   border-radius: 10px;
   font-size: 25px;
   font-weight: bold;
+  transition: 0.5s all ease-in-out;
+}
+.send_button:active{
+  transform: translateY(4px);
+  transition: 0.05s;
+}
+
+.send_button:hover{
+  background: black;
+  color: #2ad0ac;
 }
 ::-webkit-input-placeholder {
   color: lightgray;

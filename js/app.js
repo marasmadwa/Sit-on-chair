@@ -1,7 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
-
+//-------------------------slider-----------------------
     var sliderLi = document.querySelectorAll(".slider li");
     var arrBtnL = document.querySelector(".arrBtnL");
     var arrBtnR = document.querySelector(".arrBtnR");
@@ -29,5 +29,35 @@ document.addEventListener("DOMContentLoaded", function () {
         sliderLi[counter].classList.add("visible");
 
     });
+
+    //---------------------application-----------------------
+
+    var choicePart = document.querySelector('.choice_part');
+    var h3 = choicePart.firstElementChild;
+    var form = h3.nextElementSibling;
+
+    //----------firstDropDownList variables-----------
+    var firstDropDownList = form.firstElementChild;
+    var firstListPanel = firstDropDownList.lastElementChild;//!
+    var firstListArrow = firstListPanel.previousElementSibling;//!
+
+    var clicks = 0;
+    firstListArrow.addEventListener('click', function () {
+        clicks++;
+       if (clicks % 2 !== 0) {
+           firstListPanel.style.display = "block";
+       }else
+           firstListPanel.style.display = "none";
+       
+    });
+
+
+
+    var secondDropDownList = firstDropDownList.nextElementSibling;
+    console.log(secondDropDownList);
+
+
+
+
 
 });
