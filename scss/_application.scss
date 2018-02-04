@@ -281,3 +281,8 @@
   background: black;
   color: #2ad0ac;
 }
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}

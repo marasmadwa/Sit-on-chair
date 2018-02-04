@@ -9,15 +9,23 @@
 }
 .flickr{
   background-image: url("../images/flickr.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .vimeo{
   background-image: url("../images/vimeo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .pinterest{
   background-image: url("../images/pinterest.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .twitter{
   background-image: url("../images/twitter.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .p18 {
   color: gray;
