@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var image = document.querySelector('.image_part');
     //-------------------right panel variables----------------
     var panelLeft = document.querySelector('.panel_left');
+    var panelRight = document.querySelector('.panel_right');
 
     //----------firstDropDownList-----------------------------
     var firstDropDownList = form.firstElementChild;
@@ -59,17 +60,22 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+
     clair.addEventListener('click', function () {
+        var clairPrice = 200;
         panelLeft.innerHTML = panelLeft.innerHTML + clair.innerHTML + "<br>";
-        if (panelLeft.innerHTML === true){
-            panelLeft = panelLeft.innerHTML - clair.innerHTML;
-        }
+        panelRight.innerHTML = panelRight.innerHTML + clairPrice + " zł" + "<br>";
     });
+
     margarita.addEventListener('click', function () {
+        var margaritaPrice = 210;
         panelLeft.innerHTML = panelLeft.innerHTML + margarita.innerHTML + "<br>";
+        panelRight.innerHTML = panelRight.innerHTML + margaritaPrice + " zł" + "<br>";
     });
     selena.addEventListener('click', function () {
+        var selenaPrice = 230;
         panelLeft.innerHTML = panelLeft.innerHTML + selena.innerHTML + "<br>";
+        panelRight.innerHTML = panelRight.innerHTML + selenaPrice + " zł" + "<br>";
     });
 
 
@@ -77,6 +83,9 @@ document.addEventListener("DOMContentLoaded", function () {
     var secondDropDownList = firstDropDownList.nextElementSibling;
     var secondListPanel = secondDropDownList.lastElementChild;
     var secondListArrow = secondListPanel.previousElementSibling;
+    var red = secondListPanel.firstElementChild;
+    var black = red.nextElementSibling;
+    var orange = black.nextElementSibling;
 
     clicks = 0;
     secondListArrow.addEventListener('click', function () {
@@ -89,11 +98,25 @@ document.addEventListener("DOMContentLoaded", function () {
             secondListPanel.style.display = "none";
         })
     });
+    red.addEventListener('click', function () {
+        panelLeft.innerHTML = panelLeft.innerHTML + red.innerHTML + "<br>";
+        panelRight.innerHTML = panelRight.innerHTML + 10 + " zł" + "<br>";
+    });
+    black.addEventListener('click', function () {
+        panelLeft.innerHTML = panelLeft.innerHTML + black.innerHTML + "<br>";
+        panelRight.innerHTML = panelRight.innerHTML + 20 + " zł" + "<br>";
+    });
+    orange.addEventListener('click', function () {
+        panelLeft.innerHTML = panelLeft.innerHTML + orange.innerHTML + "<br>";
+        panelRight.innerHTML = panelRight.innerHTML + 30 + " zł" + "<br>";
+    });
 
     //----------thirdDropDownList--------------------------------
     var thirdDropDownList = secondDropDownList.nextElementSibling;
     var thirdListPanel = thirdDropDownList.lastElementChild;
     var thirdListArrow = thirdListPanel.previousElementSibling;
+    var textile = thirdListPanel.firstElementChild;
+    var leather = thirdListPanel.lastElementChild;
 
     clicks = 0;
     thirdListArrow.addEventListener('click', function () {
@@ -106,5 +129,35 @@ document.addEventListener("DOMContentLoaded", function () {
             thirdListPanel.style.display = "none";
         })
     });
+    textile.addEventListener('click', function () {
+        panelLeft.innerHTML = panelLeft.innerHTML + textile.innerHTML + "<br>";
+        panelRight.innerHTML = panelRight.innerHTML + 0 + " zł" + "<br>";
+    });
+    leather.addEventListener('click', function () {
+        panelLeft.innerHTML = panelLeft.innerHTML + leather.innerHTML + "<br>";
+        panelRight.innerHTML = panelRight.innerHTML + 0 + " zł" + "<br>";
+    });
+
+    //-----------------checkbox----------------------------------------------
+    var checkbox = document.querySelector('#transport');
+    var checkboxText = checkbox.nextElementSibling;
+
+    clicks = 0;
+    checkbox.addEventListener('click', function () {
+        panelLeft.innerHTML = panelLeft.innerHTML + checkboxText.innerHTML + '<br>';
+        console.log(checkbox.dataset.transportPrice);
+        if (this.checked === true ){
+            clicks++;
+            panelRight.innerHTML = panelRight.innerHTML + this.dataset.transportPrice + " zł" +  '<br>';
+        // }else if(this.checked === false){ //Nie mam pojęcia co zrobić gdy odznaczę checkboxa, jego wartość zniknęłą z listy. Jak to rozwiązać ?
+        //
+         }
+    });
+
+    //-------------------summary----------------------------------------
+    var sumDiv = document.querySelector('.sum');
+
+
+
 
 });
